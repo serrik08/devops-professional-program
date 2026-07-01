@@ -1,28 +1,28 @@
-# 📊 PROGRESS — Seguimiento semanal
+# Progress Tracking
 
-> Actualizar cada viernes o domingo al cierre de la semana.
-
----
-
-## Resumen general
-
-| Certificación | Estado | Fecha objetivo | Fecha real |
-|---------------|--------|---------------|------------|
-| Codefresh GitOps Fundamentals | ⏳ Pendiente | Mes 2 | — |
-| Oracle OCI Foundations | ⏳ Pendiente | Mes 2 | — |
-| Terraform Associate | ⏳ Pendiente | Mes 5 | — |
-| CKA | ⏳ Pendiente | Mes 9 | — |
-| Vault Associate | ⏳ Pendiente | Mes 9 | — |
-| AWS Solutions Architect Associate | ⏳ Pendiente | Mes 12 | — |
-
-**Estado:** ⏳ Pendiente | 🔄 En curso | ✅ Aprobado | ❌ Reprogramado
+> Updated every Friday. One entry per week.
 
 ---
 
-## Horas acumuladas
+## Certifications Overview
 
-| Mes | Horas objetivo | Horas reales | Delta |
-|-----|---------------|-------------|-------|
+| Certification | Status | Target | Completed |
+|---------------|:------:|--------|-----------|
+| Codefresh GitOps Fundamentals | ⏳ | Month 2 | — |
+| Oracle OCI Foundations | ⏳ | Month 2 | — |
+| HashiCorp Terraform Associate | ⏳ | Month 5 | — |
+| CKA — Certified Kubernetes Administrator | ⏳ | Month 9 | — |
+| HashiCorp Vault Associate | ⏳ | Month 9 | — |
+| AWS Solutions Architect Associate | ⏳ | Month 12 | — |
+
+**Status key:** ⏳ Pending | 🔄 In Progress | ✅ Passed | ❌ Rescheduled
+
+---
+
+## Hours Log
+
+| Month | Target | Actual | Delta |
+|-------|--------|--------|-------|
 | 1 | 20h | — | — |
 | 2 | 20h | — | — |
 | 3 | 25h | — | — |
@@ -39,37 +39,41 @@
 
 ---
 
-## Registro semanal
+## Weekly Log
 
 ---
 
-### Semana 01 — [fecha inicio] al [fecha fin]
+### Week 01 — [start date] to [end date]
 
-**Fase actual:** Fase 0 — Preparación  
-**Certificación en curso:** —
+**Phase:** Phase 0 — Setup
+**Active certification:** —
 
-#### Horas de estudio
-- Objetivo: 4h (semana de setup)
-- Real: —h
+#### Hours
+- Target: 4h
+- Actual: —h
 
-#### Objetivos de la semana
-- [ ] Crear repositorio en GitHub
-- [ ] Subir README, ROADMAP, PROGRESS
-- [ ] Actualizar LinkedIn
-- [ ] Definir horario de estudio semanal
+#### Goals
+- [ ] Create GitHub repository
+- [ ] Push initial files (README, ROADMAP, PROGRESS, AGENTS.md)
+- [ ] Install OpenCode + configure Gemini provider
+- [ ] Update LinkedIn headline and experience
 
-#### Laboratorios realizados
-— (semana de configuración)
+#### Labs completed
+— (setup week)
 
-#### Problemas encontrados
+#### Issues encountered
 —
 
-#### Lecciones aprendidas
-—
+#### Weekly reflection
+- **What did I learn?** —
+- **What surprised me?** —
+- **What should I improve?** —
+- **What would I teach someone else?** —
+- **What should I revisit?** —
 
-#### Estado general
-[ ] En tiempo  [ ] Adelantado  [ ] Atrasado — motivo: ___
+#### Status
+[ ] On track  [ ] Ahead  [ ] Behind — reason: ___
 
 ---
 
-<!-- Copiar el bloque anterior para cada semana siguiente -->
+<!-- Copy the block above for each new week -->

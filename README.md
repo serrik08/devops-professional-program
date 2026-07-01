@@ -1,122 +1,178 @@
-# 📘 DevOps Engineer Professional Program
+# DevOps Engineer Professional Program
 
-> Programa de formación profesional de 12 meses para consolidar un perfil de **DevOps Senior / Platform Engineer / SRE** competitivo a nivel internacional.
+> A professional self-paced program to become a Senior DevOps / Platform Engineer through real-world projects, industry-recognized certifications, and production-grade labs.
 
----
-
-## Autor
-
-**Sergio Ricardo Gerónimo Rocha**  
-DevOps / Infrastructure Engineer  
-Cochabamba, Bolivia  
-Experiencia en desarrollo de software: desde enero 2017 (~9 años)  
-Experiencia en DevOps: en curso (transición activa)
+![Status](https://img.shields.io/badge/status-in%20progress-blue)
+![Version](https://img.shields.io/badge/version-1.1-informational)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-1.35-326CE5?logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-Associate-7B42BC?logo=terraform&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-SAA-FF9900?logo=amazonaws&logoColor=white)
+![ArgoCD](https://img.shields.io/badge/ArgoCD-GitOps-EF7B4D?logo=argo&logoColor=white)
 
 ---
 
-## Stack tecnológico actual
+This repository documents my professional development journey while transitioning from Software Engineering (~9 years) to DevOps and Platform Engineering.
 
-AWS · EKS (Kubernetes 1.35, arm64) · ArgoCD · Terraform · Vault · Istio · Crossplane · Karpenter · External Secrets · VictoriaMetrics · Loki · ClickHouse · Argo Rollouts · Velero · BunkerWeb · GitHub Actions
+Unlike traditional study notes, this repository focuses on:
 
----
-
-## Objetivo del programa
-
-Construir en 12 meses un perfil técnico verificable y diferenciado, combinando:
-
-- **Certificaciones de peso real** (no cursos sueltos)
-- **Evidencia pública** derivada de trabajo real en producción
-- **Documentación profesional** de cada etapa de aprendizaje
+- **Production-oriented labs** — built on real infrastructure (AWS EKS, Vault, ArgoCD, Terraform)
+- **Public portfolio projects** — documented with architecture diagrams and runbooks
+- **Certification preparation** — 6 industry-recognized certifications over 12 months
+- **Engineering best practices** — ADRs, cheatsheets, and professional documentation
 
 ---
 
-## Certificaciones objetivo
+## Current Status
 
-| # | Certificación | Costo | Mes objetivo |
-|---|---------------|-------|-------------|
-| 1 | Codefresh GitOps Fundamentals | Gratis | 1-2 |
-| 2 | Oracle OCI Foundations | Gratis | 1-2 |
-| 3 | HashiCorp Terraform Associate | ~$70 | 3-5 |
-| 4 | CKA — Certified Kubernetes Administrator | ~$445 | 6-9 |
-| 5 | HashiCorp Vault Associate | ~$70-95 | 9 |
-| 6 | AWS Solutions Architect Associate | ~$150 | 10-12 |
+| | |
+|---|---|
+| **Program Version** | v1.0 |
+| **Start Date** | July 2026 |
+| **Target Completion** | July 2027 |
+| **Current Phase** | Phase 0 — Setup |
+| **Current Module** | Module 00 — Foundations |
+| **Next Certification** | Codefresh GitOps Fundamentals |
 
-**Inversión total estimada:** ~$735-760 USD en 12 meses
+**Overall Progress**
+
+```
+Phase 1 — Free certs      ░░░░░░░░░░  0%
+Phase 2 — Terraform       ░░░░░░░░░░  0%
+Phase 3 — CKA + Vault     ░░░░░░░░░░  0%
+Phase 4 — AWS SAA         ░░░░░░░░░░  0%
+```
 
 ---
 
-## Estructura del repositorio
+## Why this repository?
+
+Many roadmaps stop at theory.
+
+This one is different.
+
+Everything learned here must eventually become one of the following:
+
+- a lab with real infrastructure
+- a public portfolio project
+- technical documentation
+- a cheatsheet or runbook
+- automation
+
+Learning without building is incomplete.
+
+---
+
+## Program Goals
+
+- [ ] 6 industry-recognized certifications
+- [ ] 1 public portfolio project (EKS migration runbook)
+- [ ] 30+ Kubernetes labs (CKA-focused)
+- [ ] 20+ Terraform labs
+- [ ] 3 custom skills for OpenCode agent
+- [ ] kubectl, terraform, helm, aws cheatsheets
+
+---
+
+## Learning Philosophy
+
+```
+Learn
+  ↓
+Practice
+  ↓
+Build
+  ↓
+Document
+  ↓
+Teach
+  ↓
+Repeat
+```
+
+---
+
+## Certifications Roadmap
+
+| # | Certification | Cost | Target | Status |
+|---|---------------|------|--------|:------:|
+| 1 | Codefresh GitOps Fundamentals | Free | Month 2 | ⏳ |
+| 2 | Oracle OCI Foundations | Free | Month 2 | ⏳ |
+| 3 | HashiCorp Terraform Associate | ~$70 | Month 5 | ⏳ |
+| 4 | CKA — Certified Kubernetes Administrator | ~$445 | Month 9 | ⏳ |
+| 5 | HashiCorp Vault Associate | ~$70-95 | Month 9 | ⏳ |
+| 6 | AWS Solutions Architect Associate | ~$150 | Month 12 | ⏳ |
+
+**Estimated total investment:** ~$735-760 USD
+
+---
+
+## Repository Structure
 
 ```
 devops-professional-program/
-│
-├── README.md              ← Este archivo
-├── ROADMAP.md             ← Planificación anual y semanal
-├── PROGRESS.md            ← Seguimiento de avance (actualización semanal)
-├── CHANGELOG.md           ← Versiones y actualizaciones del programa
-│
-├── modules/               ← Un archivo por módulo temático
-│   ├── 00-foundations.md
-│   ├── 01-linux.md
-│   ├── 02-networking.md
-│   ├── 03-git-advanced.md
-│   ├── 04-docker.md
-│   ├── 05-kubernetes-cka.md
-│   ├── 06-terraform.md
-│   ├── 07-gitops-argocd.md
-│   ├── 08-aws-saa.md
-│   ├── 09-observability.md
-│   ├── 10-security-vault-cks.md
-│   ├── 11-cicd.md
-│   └── 12-platform-engineering.md
-│
-├── certifications/        ← Guía específica por examen
-│   ├── codefresh-gitops.md
-│   ├── oci-foundations.md
-│   ├── terraform-associate.md
-│   ├── cka.md
-│   ├── vault-associate.md
-│   └── aws-saa.md
-│
-├── labs/                  ← Laboratorios prácticos por módulo
-│   └── (un directorio por módulo)
-│
-├── projects/              ← Proyectos públicos del portafolio
-│   ├── 01-migration-runbook/
-│   └── (proyectos adicionales)
-│
-├── diagrams/              ← Diagramas de arquitectura (draw.io, Mermaid)
-│
-├── scripts/               ← Scripts reutilizables creados durante el programa
-│
-├── templates/             ← Plantillas de documentos, CVs, etc.
-│
-└── notes/                 ← Apuntes libres por tema
+
+    README.md              - This file
+    ROADMAP.md             - 12-month plan with weekly breakdown
+    PROGRESS.md            - Weekly tracking log
+    CHANGELOG.md           - Program versions and updates
+    AGENTS.md              - OpenCode agent instructions
+
+    modules/               - One file (or folder) per topic
+        00-foundations.md
+        01-linux.md
+        02-networking.md
+        03-git-advanced.md
+        04-docker.md
+        05-kubernetes/     - Expanded structure (CKA)
+        06-terraform.md
+        07-gitops-argocd.md
+        08-aws-saa.md
+        09-observability.md
+        10-security-vault-cks.md
+        11-cicd.md
+        12-platform-engineering.md
+
+    certifications/        - Exam-specific guides
+    labs/                  - Hands-on labs by module
+    projects/              - Public portfolio projects
+    cheatsheets/           - Quick reference cards
+    adr/                   - Architecture Decision Records
+    diagrams/              - Architecture diagrams (Mermaid, draw.io)
+    scripts/               - Reusable automation scripts
+    notes/                 - Free-form notes by topic
+    templates/             - Document templates
 ```
 
 ---
 
-## Metodología
+## Current Stack (Production Context)
 
-**Learn → Build → Document → Share**
+All labs are designed around this real-world stack:
 
-Por cada hora de teoría: mínimo 2 horas de práctica con laboratorios reales.
-
-Los laboratorios están diseñados para ejecutarse sobre infraestructura real (AWS, EKS, etc.) siempre que sea posible, no solo sobre entornos simulados.
-
----
-
-## Filosofía del programa
-
-> Las certificaciones validan lo que ya sabés.  
-> Los proyectos públicos demuestran cómo trabajás.  
-> La documentación diferencia a los seniors de los demás.
-
-Este programa asume que la experiencia práctica ya existe. El objetivo no es "aprender desde cero" sino **formalizar, profundizar y hacer visible** lo que ya se hace en producción.
+| Layer | Technology |
+|-------|-----------|
+| Cloud | AWS (EKS, RDS, ALB, Route53, ECR, TGW, IAM, KMS, SSO) |
+| Orchestration | Kubernetes 1.35 arm64, Karpenter, Istio 1.25 mTLS |
+| GitOps | ArgoCD v2.14, Argo Rollouts, Helm, Kustomize |
+| IaC | Terraform (multi-workspace, remote state S3) |
+| Secrets | Vault 0.29.1 + KMS, External Secrets 0.14.4 |
+| Observability | VictoriaMetrics, Loki, Grafana |
+| Platform | Crossplane 1.19, Restate, PeerDB, ClickHouse |
+| Security | Istio mTLS, BunkerWeb WAF, RBAC, OPA |
+| CI/CD | GitHub Actions, ArgoCD |
 
 ---
 
-## Versión
+## Author
 
-`v1.0` — Inicio del programa  
-Última actualización: 2026-06
+**Sergio Ricardo Gerónimo Rocha**
+DevOps / Infrastructure Engineer — Cochabamba, Bolivia
+Software engineering experience: since January 2017 (~9 years)
+DevOps transition: active
+
+---
+
+## License
+
+MIT

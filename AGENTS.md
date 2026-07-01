@@ -1,65 +1,101 @@
 # AGENTS.md — DevOps Professional Program
 
-## Contexto del proyecto
+## Project context
 
-Este repositorio es un programa de formación profesional de 12 meses para consolidar un perfil DevOps Senior / Platform Engineer / SRE. No es un proyecto de código — es documentación técnica estructurada en Markdown.
+This repository is a 12-month professional training program to build a Senior DevOps / Platform Engineer profile. It is not a code project — it is structured technical documentation in Markdown.
 
-**Autor:** Sergio Ricardo Gerónimo Rocha  
-**Stack actual (contexto real):** AWS EKS 1.35 arm64 · ArgoCD v2.14 · Terraform · Vault 0.29.1 · Istio 1.25 · Karpenter · External Secrets · Crossplane · VictoriaMetrics · Loki
+**Author:** Sergio Ricardo Gerónimo Rocha
+**Current stack:** AWS EKS 1.35 arm64 · ArgoCD v2.14 · Terraform · Vault 0.29.1 · Istio 1.25 · Karpenter · External Secrets · Crossplane · VictoriaMetrics · Loki
 
-## Reglas estrictas para el agente
+## Language
 
-### Estructura de archivos
-- Todos los módulos van en `modules/` con prefijo numérico: `05-kubernetes-cka.md`
-- Todas las guías de certificación van en `certifications/`
-- Los laboratorios van en `labs/<nombre-modulo>/`
-- Los proyectos van en `projects/<nombre-proyecto>/`
-- Nunca crear archivos fuera de estas carpetas sin confirmación explícita
+**All content is written in English.** No exceptions for public files.
+Personal notes in `notes/` may be written in Spanish.
 
-### Estilo de documentación
-- Escribir en español (el programa es personal, no público aún)
-- Markdown limpio — sin HTML embebido
-- Los bloques de código deben tener el lenguaje especificado: ```bash, ```yaml, ```hcl, etc.
-- Las tablas deben tener alineación consistente
-- Los checkboxes de tareas usan `- [ ]` y `- [x]`
+## File placement rules
 
-### Contenido técnico
-- Priorizar documentación oficial sobre blogs de terceros
-- Cuando se mencionen versiones de herramientas, usar las que corresponden al stack real del autor (ver arriba)
-- Los laboratorios deben ser ejecutables en WSL Ubuntu o sobre AWS plat-dev (EKS)
-- No inventar comandos — si hay duda, documentar el comando con una nota de verificación
+| Content type | Location |
+|-------------|----------|
+| Module study notes | `modules/<NN>-<name>.md` or `modules/<NN>-<name>/README.md` |
+| Certification guides | `certifications/<name>.md` |
+| Hands-on labs | `labs/<module-name>/<lab-name>.md` |
+| Portfolio projects | `projects/<NN>-<name>/` |
+| Quick reference | `cheatsheets/<tool>.md` |
+| Architecture decisions | `adr/<NNNN>-<title>.md` |
+| Architecture diagrams | `diagrams/` |
+| Reusable scripts | `scripts/` |
+| Free-form notes | `notes/` |
 
-### Módulo de Kubernetes (05-kubernetes-cka.md)
-Este módulo es el más crítico del programa (CKA pesa ~$445 y el examen es hands-on).
-- Incluir los 5 dominios oficiales del examen con sus pesos exactos
-- Los labs deben usar `kubeadm` (no EKS) para preparar el entorno del examen
-- Incluir siempre la sección de alias y shortcuts de kubectl
-- Referenciar los hallazgos H-01 a H-05 de la migración real como material de troubleshooting
+Never create files outside these locations without explicit confirmation.
 
-### PROGRESS.md
-- Nunca sobrescribir semanas ya completadas
-- Solo agregar nuevas semanas al final del archivo
-- El formato del template semanal es fijo — no modificarlo
+## Module structure rules
 
-### CHANGELOG.md
-- Seguir formato: `## vX.Y — YYYY-MM` + lista de cambios
-- Incrementar versión minor para nuevos módulos, patch para correcciones
+Small modules (Git, Docker, Linux): single `.md` file in `modules/`
 
-## Agentes disponibles
+Large modules (Kubernetes, Terraform, AWS): expanded folder structure:
+```
+modules/05-kubernetes/
+    README.md          - main module content
+    labs/              - lab files
+    cheatsheets/       - kubectl, helm quick refs
+    manifests/         - example YAML files
+    notes/             - free-form notes
+```
 
-Usá `Plan` (Tab) para revisar estructura antes de escribir.  
-Usá `Build` para generar o editar contenido de módulos.
+Only `05-kubernetes/`, `06-terraform/`, and `08-aws-saa/` use expanded structure.
 
-## Comandos custom disponibles
+## Documentation standards
 
-- `/new-module <nombre>` — crea un nuevo módulo con estructura estándar
-- `/new-lab <modulo> <nombre>` — crea un nuevo laboratorio en la carpeta correcta
-- `/weekly` — agrega la entrada de seguimiento semanal a PROGRESS.md
-- `/review-module <archivo>` — revisa consistencia de formato y contenido de un módulo
+- Markdown only — no HTML, no Word, no PDF inside the repo
+- Code blocks must specify language: ```bash ```yaml ```hcl ```json
+- Tables must have consistent alignment
+- Task checkboxes: `- [ ]` and `- [x]` (not `* [ ]`)
+- Tool names in backtick inline: `kubectl`, `ArgoCD`, `Vault`
+- No emojis in section headers; status icons (✅ ⏳ ❌) only in tables
 
-## Lo que NO debe hacer el agente sin confirmación
+## Lab structure
 
-- Eliminar o sobreescribir módulos existentes
-- Cambiar la estructura de carpetas definida en README.md
-- Agregar dependencias externas o scripts ejecutables fuera de `scripts/`
-- Modificar PROGRESS.md en semanas ya registradas
+Every lab must include:
+1. **Objective** — what this lab demonstrates
+2. **Prerequisites** — what must be ready
+3. **Steps** — numbered, verifiable commands
+4. **Verification** — expected output
+5. **Cleanup** — how to undo (if applicable)
+
+CKA labs use `kubeadm` clusters, NOT EKS. Keep them in `labs/kubernetes-cka/`.
+
+## ADR rules
+
+- New ADRs use the next sequential number: `0005-title.md`
+- Status values: `Proposed` | `Accepted` | `Deprecated` | `Superseded`
+- Update `adr/README.md` table when adding a new ADR
+
+## Cheatsheet rules
+
+- One file per tool in `cheatsheets/`
+- Include a last-updated date and version context at the bottom
+- Prefer real commands over theory — everything must be runnable
+
+## PROGRESS.md rules
+
+- NEVER overwrite existing weekly entries
+- Only append new weeks at the end of the file
+- Fixed template format — do not modify its structure
+- Update certification table status column only (not target dates)
+
+## CHANGELOG.md format
+
+```
+## vX.Y — YYYY-MM
+- Change description
+```
+
+Minor version bump for new modules; patch for corrections.
+
+## What the agent must NOT do without confirmation
+
+- Delete or overwrite existing modules
+- Change the folder structure defined in README.md
+- Add executable scripts outside `scripts/`
+- Modify PROGRESS.md entries already recorded
+- Switch the language of existing content to Spanish
