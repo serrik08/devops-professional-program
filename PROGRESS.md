@@ -23,7 +23,7 @@
 
 | Month | Target | Actual | Delta |
 |-------|--------|--------|-------|
-| 1 | 20h | — | — |
+| 1 | 20h | ~2h | +2h |
 | 2 | 20h | — | — |
 | 3 | 25h | — | — |
 | 4 | 25h | — | — |
@@ -43,20 +43,20 @@
 
 ---
 
-### Week 01 — [start date] to [end date]
+### Week 01 — 2026-06-30 to 2026-07-01
 
-**Phase:** Phase 0 — Setup
+**Phase:** Phase 0 — Setup  
 **Active certification:** —
 
 #### Hours
 - Target: 4h
-- Actual: —h
+- Actual: ~2h
 
 #### Goals
-- [ ] Create GitHub repository
-- [ ] Push initial files (README, ROADMAP, PROGRESS, AGENTS.md)
-- [ ] Install OpenCode + configure Gemini provider
-- [ ] Update LinkedIn headline and experience
+- [x] Create GitHub repository
+- [x] Push initial files (README, ROADMAP, PROGRESS, AGENTS.md)
+- [x] Install OpenCode + configure Gemini provider
+- [x] Update LinkedIn headline and experience
 
 #### Labs completed
 — (setup week)
@@ -65,14 +65,14 @@
 —
 
 #### Weekly reflection
-- **What did I learn?** —
-- **What surprised me?** —
+- **What did I learn?** Repository structure and conventions for the program
+- **What surprised me?** Setup took less time than expected
 - **What should I improve?** —
-- **What would I teach someone else?** —
+- **What would I teach someone else?** How to structure a DevOps learning repo with AGENTS.md and OpenCode skills
 - **What should I revisit?** —
 
 #### Status
-[ ] On track  [ ] Ahead  [ ] Behind — reason: ___
+[ ] On track  [x] Ahead — finished 3 days early
 
 ---
 
