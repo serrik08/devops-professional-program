@@ -16,33 +16,28 @@ Personal notes in `notes/` may be written in Spanish.
 
 | Content type | Location |
 |-------------|----------|
-| Module study notes | `modules/<NN>-<name>.md` or `modules/<NN>-<name>/README.md` |
-| Certification guides | `certifications/<name>.md` |
-| Hands-on labs | `labs/<module-name>/<lab-name>.md` |
-| Portfolio projects | `projects/<NN>-<name>/` |
+| Competency roadmaps | `learning-paths/<competency>/` (courses, certs, projects) |
+| Module study notes & labs | `modules/<NN>-<name>/` (theory, labs, notes) |
+| Career & Cert evaluations | `career/` (matrix, framework) |
+| Weekly logs | `weekly/week-<NN>.md` |
 | Quick reference | `cheatsheets/<tool>.md` |
 | Architecture decisions | `adr/<NNNN>-<title>.md` |
-| Architecture diagrams | `diagrams/` |
 | Reusable scripts | `scripts/` |
-| Free-form notes | `notes/` |
 
 Never create files outside these locations without explicit confirmation.
 
-## Module structure rules
+## Module vs Learning Path structure
 
-Small modules (Git, Docker, Linux): single `.md` file in `modules/`
+- **`learning-paths/`**: The roadmap. Defines *what* to study, in what order, which certifications to take, and which projects demonstrate the competency.
+- **`modules/`**: The actual content. Theory, hands-on labs, command outputs, and study notes.
 
-Large modules (Kubernetes, Terraform, AWS): expanded folder structure:
+Every module must use a folder structure:
 ```
-modules/05-kubernetes/
-    README.md          - main module content
-    labs/              - lab files
-    cheatsheets/       - kubectl, helm quick refs
-    manifests/         - example YAML files
-    notes/             - free-form notes
+modules/07-gitops-argocd/
+    README.md          - main theory
+    labs/              - lab markdown files
+    manifests/         - example YAML
 ```
-
-Only `05-kubernetes/`, `06-terraform/`, and `08-aws-saa/` use expanded structure.
 
 ## Documentation standards
 
@@ -76,12 +71,12 @@ CKA labs use `kubeadm` clusters, NOT EKS. Keep them in `labs/kubernetes-cka/`.
 - Include a last-updated date and version context at the bottom
 - Prefer real commands over theory — everything must be runnable
 
-## PROGRESS.md rules
+## Weekly Tracking (`weekly/`)
 
-- NEVER overwrite existing weekly entries
-- Only append new weeks at the end of the file
-- Fixed template format — do not modify its structure
-- Update certification table status column only (not target dates)
+- Add new entries as `weekly/week-<NN>.md`
+- Append links to `weekly/README.md`
+- Keep the exact same structure for new weeks
+- NEVER overwrite or modify past weeks' contents unless fixing typos
 
 ## CHANGELOG.md format
 

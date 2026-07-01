@@ -32,7 +32,7 @@ Unlike traditional study notes, this repository focuses on:
 | **Target Completion** | July 2027 |
 | **Current Phase** | Phase 0 — Setup |
 | **Current Module** | Module 00 — Foundations |
-| **Next Certification** | Codefresh GitOps Fundamentals |
+| **Next Certification** | Akuity GitOps / ArgoCD |
 
 **Overall Progress**
 
@@ -92,18 +92,18 @@ Repeat
 
 ---
 
-## Certifications Roadmap
+## Learning Paths
 
-| # | Certification | Cost | Target | Status |
-|---|---------------|------|--------|:------:|
-| 1 | Codefresh GitOps Fundamentals | Free | Month 2 | ⏳ |
-| 2 | Oracle OCI Foundations | Free | Month 2 | ⏳ |
-| 3 | HashiCorp Terraform Associate | ~$70 | Month 5 | ⏳ |
-| 4 | CKA — Certified Kubernetes Administrator | ~$445 | Month 9 | ⏳ |
-| 5 | HashiCorp Vault Associate | ~$70-95 | Month 9 | ⏳ |
-| 6 | AWS Solutions Architect Associate | ~$150 | Month 12 | ⏳ |
+Instead of building a repository of certifications, this is a repository of **competencies**. If a certification disappears tomorrow, the competency remains.
 
-**Estimated total investment:** ~$735-760 USD
+- **GitOps** (ArgoCD, Akuity, Flux, Kargo)
+- **Terraform** (IaC, State Management, Modules, AWS Provider)
+- **Kubernetes** (CKA, Cluster Administration, Troubleshooting)
+- **AWS** (Architecture, Networking, Compute, Storage)
+- **Security** (Vault, CKS concepts, IAM)
+
+Each path contains:
+`courses.md` | `labs.md` | `certifications.md` | `resources.md` | `notes.md` | `project.md`
 
 ---
 
@@ -114,34 +114,42 @@ devops-professional-program/
 
     README.md              - This file
     ROADMAP.md             - 12-month plan with weekly breakdown
-    PROGRESS.md            - Weekly tracking log
     CHANGELOG.md           - Program versions and updates
     AGENTS.md              - OpenCode agent instructions
 
-    modules/               - One file (or folder) per topic
-        00-foundations.md
-        01-linux.md
-        02-networking.md
-        03-git-advanced.md
-        04-docker.md
-        05-kubernetes/     - Expanded structure (CKA)
-        06-terraform.md
-        07-gitops-argocd.md
-        08-aws-saa.md
-        09-observability.md
-        10-security-vault-cks.md
-        11-cicd.md
-        12-platform-engineering.md
+    learning-paths/        - Competency-based hubs
+        aws/
+        gitops/
+        kubernetes/
+        security/
+        terraform/
 
-    certifications/        - Exam-specific guides
-    labs/                  - Hands-on labs by module
-    projects/              - Public portfolio projects
+    career/                - Career development and evaluations
+        certification-evaluation-framework.md
+        certification-matrix.md
+
+    modules/               - Granular technical topics
+        00-foundations/
+        01-linux/
+        02-networking/
+        03-git-advanced/
+        04-docker/
+        05-kubernetes-cka/
+        06-terraform/
+        07-gitops-argocd/
+        08-aws-saa/
+        09-observability/
+        10-security-vault-cks/
+        11-cicd/
+        12-platform-engineering/
+
+    books/                 - Book summaries and notes
     cheatsheets/           - Quick reference cards
     adr/                   - Architecture Decision Records
+    resources/             - General links and shared materials
+    weekly/                - Weekly progress logs and reflections
     diagrams/              - Architecture diagrams (Mermaid, draw.io)
     scripts/               - Reusable automation scripts
-    notes/                 - Free-form notes by topic
-    templates/             - Document templates
 ```
 
 ---
